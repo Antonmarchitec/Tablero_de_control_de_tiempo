@@ -1,0 +1,39 @@
+/*
+## Colors
+
+### Primary
+
+- Blue: hsl(246, 80%, 60%)
+
+- Light red (work): hsl(15, 100%, 70%)
+- Soft blue (play): hsl(195, 74%, 62%)
+- Light red (study): hsl(348, 100%, 68%)
+- Lime green (exercise): hsl(145, 58%, 55%)
+- Violet (social): hsl(264, 64%, 52%)
+- Soft orange (self care): hsl(43, 84%, 65%)
+
+### Neutral
+
+- Very dark blue: hsl(226, 43%, 10%)
+- Dark blue: hsl(235, 46%, 20%)
+- Desaturated blue: hsl(235, 45%, 61%)
+- Pale Blue: hsl(236, 100%, 87%)
+*/
+
+//COLORES PRIOMARIOS
+$color-prim: hsl(246, 80%, 60%);
+$color-sec:  hsl(15, 100%, 70%);
+$color-ter:  hsl(195, 74%, 62%);
+$color-cua:  hsl(348, 100%, 68%);
+$color-quin: hsl(145, 58%, 55%);
+$color-sex:  hsl(264, 64%, 52%) ;
+$color-sep:  hsl(43, 84%, 65%);
+
+
+//COLORES NEUTRALES
+$color-new1: hsl(226, 43%, 10%);
+$color-new2: hsl(235, 46%, 20%);
+$color-new3: hsl(235, 45%, 61%); 
+$color-new4: hsl(236, 100%, 87%); 
+
+

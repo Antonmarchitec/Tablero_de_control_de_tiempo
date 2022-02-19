@@ -1,0 +1,854 @@
+@import "colors";
+
+.box_sidebar{
+    width: 100%;
+    height: 100%;
+    background:$color-new2;
+    border-radius: 15px;
+    overflow: hidden;
+    .box_sidebar__caja{
+        width: 100%;
+        height: 300px;
+        padding: 20px;
+        background: $color-prim;
+        border-radius: 0px 0px 10px 10px;
+        .box_sidebar__caja__imagen{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-image: url(../images/image-jeremy.png);
+            background-size: 100% 100%;
+            border:2px solid white;
+        }
+        .box_sidebar__caja_box{
+            width: 100%;
+            line-height: 30px;
+            .box_sidebar__caja_box_titlePeque{
+                margin-top: 20px;
+                font-weight: 300;
+                font-size: 18px;
+                color:$color-new4;
+                //background: green;
+            }
+            .box_sidebar__caja_box_title{
+                //background: ghostwhite;
+                margin-top: 5px;
+                font-weight: 300;
+                font-size: 35px;
+                color:white;
+                line-height: 38px;
+            }
+        }   
+    }
+
+    .box_sidebar__enlaces{
+        margin-top: 5px;
+        width: 100%;
+        padding: 10px 20px;
+        //background: rgba(255, 166, 0, 0.575);
+        .box_sidebar__enlace{
+            margin-bottom: 20px;
+            color: $color-new3;
+        }
+        .box_sidebar__enlace:hover{
+            color: white;
+        }
+    }
+    
+}
+
+@media (min-width:320px) and (max-width:640px){
+    .box_sidebar{
+        width: 90%;
+        margin: auto;
+        .box_sidebar__caja{
+            height: 180px;
+            padding: 0;
+            //background-color: aqua;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .box_sidebar__caja__imagen{
+                margin-left: 20px;
+            }
+            .box_sidebar__caja_box{
+                width: 220px;
+                //background: red;
+                line-height: 7px;
+                .box_sidebar__caja_box_title{
+                    font-size: 28px;
+                }
+            }
+
+        }
+        .box_sidebar__enlaces{
+            //background: red;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .box_sidebar__enlace{
+                //background: green;
+            }
+        }
+    }
+}
+
+
+
+
+///////////////////////////BOX WORK/////////////////
+.box_work{
+   width: 100%;
+   height: 100%;
+   background:$color-sec;
+   border-radius: 15px;
+   .box_work_blockA{
+       width: 100%;
+       height: 15%;
+       position: relative;
+       z-index: 1;
+       overflow: hidden;
+       .box_work_blockA_image{
+           width: 70px;
+           height: 60px;
+           background-image: url(../images/icon-work.svg);
+           background-size: 100% 100%;
+           position: absolute;
+           top: -5px;
+           right: 10px;
+           z-index: 1;
+       }
+       .box_work_blockA_imagePlay{
+            width: 70px;
+            height: 60px;
+            background-image: url(../images/icon-play.svg);
+            background-size: 100% 100%;
+            position: absolute;
+            top: -5px;
+            right: 10px;
+            z-index: 1;
+        
+       }
+   }
+   
+   .box_work_blockB{
+       width: 100%;
+       height: 85%;
+       padding: 20px;
+       background: $color-new2;   //azul
+       border-radius: 15px;
+       z-index: 2;
+       transition: 0.2s ease-in-out all;
+
+       .box_work_blockB_box{
+            width: 100%;
+            //background: hotpink;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .box_work_blockB_box_text{
+                color: white;
+                font-weight: 400;
+                font-size: 18px;
+            }
+            .box_work_blockB_box_points{
+                
+            }
+       }
+       .box_work_blockB_hrs{
+          margin-top: 20px;  
+          color: white;
+          font-size: 60px;
+          font-weight: 300;
+          .esp{
+            color: rgb(218, 8, 8);
+        }
+       }
+       .box_work_blockB_last{
+          color: $color-new4;
+          font-size: 16px;
+          font-weight: 300;
+          
+       }
+   }
+   .box_work_blockB:hover{
+       background:rgba(5, 34, 129, 0.753);
+       cursor: pointer;
+   }
+}
+
+@media (min-width:320px) and (max-width:640px){
+    .box_work{
+        width: 90%;
+        height: 230px;
+        margin: auto;
+        
+        //padding: 5px 0px;
+        .box_work_blockA{
+
+        }
+        .box_work_blockB{
+            .box_work_blockB_box{
+                width: 100%;
+                //background: hotpink;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .box_work_blockB_box_text{
+                    color: white;
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+                .box_work_blockB_box_points{
+                    
+                }
+           }
+           .box_work_blockB_hrs{
+              margin-top: 20px;  
+              color: white;
+              font-size: 60px;
+              font-weight: 300;
+              width: 150px;
+              float: left;
+              .esp{
+                color: rgb(218, 8, 8);
+            }
+           }
+           .box_work_blockB_last{
+               margin-top: 50px;
+               float: right;
+               width: 150px;
+              color: $color-new4;
+              font-size: 16px;
+              font-weight: 300;
+           }
+        }
+    }
+}
+
+
+
+
+///////////////////////////BOX PLAY/////////////////
+.box_play{
+    width: 100%;
+    height: 100%;
+    background:$color-ter;
+    border-radius: 15px;
+    .box_play_blockA{
+        width: 100%;
+        height: 15%;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        .box_play_blockA_image{
+            width: 70px;
+            height: 60px;
+            background-image: url(../images/icon-work.svg);
+            background-size: 100% 100%;
+            position: absolute;
+            top: -5px;
+            right: 10px;
+            z-index: 1;
+        }
+        .box_play_blockA_image{
+             width: 70px;
+             height: 60px;
+             background-image: url(../images/icon-play.svg);
+             background-size: 100% 100%;
+             position: absolute;
+             top: -5px;
+             right: 10px;
+             z-index: 1;
+         
+        }
+    }
+    
+    .box_play_blockB{
+        width: 100%;
+        height: 85%;
+        padding: 20px;
+        background: $color-new2;   //azul
+        border-radius: 15px;
+        z-index: 2;
+        transition: 0.2s ease-in-out all;
+
+        .box_play_blockB_box{
+             width: 100%;
+             //background: hotpink;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             .box_play_blockB_box_text{
+                 color: white;
+                 font-weight: 400;
+                 font-size: 18px;
+             }
+             .box_work_blockB_box_points{
+                 
+             }
+        }
+        .box_play_blockB_hrs{
+           margin-top: 20px;  
+           color: white;
+           font-size: 60px;
+           font-weight: 300;
+        }
+        .box_play_blockB_last{
+           color: $color-new4;
+           font-size: 16px;
+           font-weight: 300;
+        }
+    }
+    .box_play_blockB:hover{
+        background:rgba(5, 34, 129, 0.753);
+        cursor: pointer;
+    }
+}
+
+
+@media (min-width:320px) and (max-width:640px){
+    .box_play{
+        width: 90%;
+        height: 230px;
+        margin: auto;
+        //padding: 5px 0px;
+        .box_play_blockA{
+
+        }
+        .box_play_blockB{
+            .box_play_blockB_box{
+                width: 100%;
+                //background: hotpink;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .box_play_blockB_box_text{
+                    color: white;
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+                .box_play_blockB_box_points{
+                    
+                }
+           }
+           .box_play_blockB_hrs{
+              margin-top: 20px;  
+              color: white;
+              font-size: 60px;
+              font-weight: 300;
+              width: 150px;
+              float: left;
+              .esp{
+                color: rgb(218, 8, 8);
+            }
+           }
+           .box_play_blockB_last{
+               margin-top: 50px;
+               float: right;
+               width: 150px;
+              color: $color-new4;
+              font-size: 16px;
+              font-weight: 300;
+           }
+        }
+    }
+}
+
+
+ ///////////////////////////BOX PLAY/////////////////
+.box_study{
+    width: 100%;
+    height: 100%;
+    background:$color-cua;
+    border-radius: 15px;
+    .box_study_blockA{
+        width: 100%;
+        height: 15%;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        .box_study_blockA_image{
+            width: 70px;
+            height: 60px;
+            background-image: url(../images/icon-work.svg);
+            background-size: 100% 100%;
+            position: absolute;
+            top: -5px;
+            right: 10px;
+            z-index: 1;
+        }
+        .box_study_blockA_image{
+             width: 70px;
+             height: 60px;
+             background-image: url(../images/icon-study.svg);
+             background-size: 100% 100%;
+             position: absolute;
+             top: -5px;
+             right: 10px;
+             z-index: 1;
+         
+        }
+    }
+    
+    .box_study_blockB{
+        width: 100%;
+        height: 85%;
+        padding: 20px;
+        background: $color-new2;   //azul
+        border-radius: 15px;
+        z-index: 2;
+        transition: 0.2s ease-in-out all;
+
+        .box_study_blockB_box{
+             width: 100%;
+             //background: hotpink;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             .box_study_blockB_box_text{
+                 color: white;
+                 font-weight: 400;
+                 font-size: 18px;
+             }
+             .box_work_blockB_box_points{
+                 
+             }
+        }
+        .box_study_blockB_hrs{
+           margin-top: 20px;  
+           color: white;
+           font-size: 60px;
+           font-weight: 300;
+        }
+        .box_study_blockB_last{
+           color: $color-new4;
+           font-size: 16px;
+           font-weight: 300;
+        }
+    }
+    .box_study_blockB:hover{
+        background:rgba(5, 34, 129, 0.753);
+        cursor: pointer;
+    }
+ }
+ @media (min-width:320px) and (max-width:640px){
+    .box_study{
+        width: 90%;
+        height: 230px;
+        margin: auto;
+        //padding: 5px 0px;
+        .box_study_blockA{
+
+        }
+        .box_study_blockB{
+            .box_study_blockB_box{
+                width: 100%;
+                //background: hotpink;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .box_study_blockB_box_text{
+                    color: white;
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+                .box_study_blockB_box_points{
+                    
+                }
+           }
+           .box_study_blockB_hrs{
+              margin-top: 20px;  
+              color: white;
+              font-size: 60px;
+              font-weight: 300;
+              width: 150px;
+              float: left;
+              .esp{
+                color: rgb(218, 8, 8);
+            }
+           }
+           .box_study_blockB_last{
+               margin-top: 50px;
+               float: right;
+               width: 150px;
+              color: $color-new4;
+              font-size: 16px;
+              font-weight: 300;
+           }
+        }
+    }
+}
+
+
+ ///////////////////////////BOX PLAY/////////////////
+.box_exercice{
+    width: 100%;
+    height: 100%;
+    background:$color-quin;
+    border-radius: 15px;
+    .box_exercice_blockA{
+        width: 100%;
+        height: 15%;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        .box_exercice_blockA_image{
+            width: 70px;
+            height: 60px;
+            background-image: url(../images/icon-work.svg);
+            background-size: 100% 100%;
+            position: absolute;
+            top: -5px;
+            right: 10px;
+            z-index: 1;
+        }
+        .box_exercice_blockA_image{
+             width: 70px;
+             height: 60px;
+             background-image: url(../images/icon-exercise.svg);
+             background-size: 100% 100%;
+             position: absolute;
+             top: -5px;
+             right: 10px;
+             z-index: 1;
+         
+        }
+    }
+    
+    .box_exercice_blockB{
+        width: 100%;
+        height: 85%;
+        padding: 20px;
+        background: $color-new2;   //azul
+        border-radius: 15px;
+        z-index: 2;
+        transition: 0.2s ease-in-out all;
+
+        .box_exercice_blockB_box{
+             width: 100%;
+             //background: hotpink;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             .box_exercice_blockB_box_text{
+                 color: white;
+                 font-weight: 400;
+                 font-size: 18px;
+             }
+             .box_work_blockB_box_points{
+                 
+             }
+        }
+        .box_exercice_blockB_hrs{
+           margin-top: 20px;  
+           color: white;
+           font-size: 60px;
+           font-weight: 300;
+        }
+        .box_exercice_blockB_last{
+           color: $color-new4;
+           font-size: 16px;
+           font-weight: 300;
+        }
+    }
+    .box_exercice_blockB:hover{
+        background:rgba(5, 34, 129, 0.753);
+        cursor: pointer;
+    }
+ }
+ @media (min-width:320px) and (max-width:640px){
+    .box_exercice{
+        width: 90%;
+        height: 230px;
+        margin: auto;
+        //padding: 5px 0px;
+        .box_exercice_blockA{
+
+        }
+        .box_exercice_blockB{
+            .box_exercice_blockB_box{
+                width: 100%;
+                //background: hotpink;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .box_exercice_blockB_box_text{
+                    color: white;
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+                .box_exercice_blockB_box_points{
+                    
+                }
+           }
+           .box_exercice_blockB_hrs{
+              margin-top: 20px;  
+              color: white;
+              font-size: 60px;
+              font-weight: 300;
+              width: 150px;
+              float: left;
+              .esp{
+                color: rgb(218, 8, 8);
+            }
+           }
+           .box_exercice_blockB_last{
+               margin-top: 50px;
+               float: right;
+               width: 150px;
+              color: $color-new4;
+              font-size: 16px;
+              font-weight: 300;
+           }
+        }
+    }
+}
+
+ ///////////////////////////BOX PLAY/////////////////
+.box_social{
+    width: 100%;
+    height: 100%;
+    background:$color-sex;
+    border-radius: 15px;
+    .box_social_blockA{
+        width: 100%;
+        height: 15%;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        .box_social_blockA_image{
+            width: 70px;
+            height: 60px;
+            background-image: url(../images/icon-work.svg);
+            background-size: 100% 100%;
+            position: absolute;
+            top: -5px;
+            right: 10px;
+            z-index: 1;
+        }
+        .box_social_blockA_image{
+             width: 70px;
+             height: 60px;
+             background-image: url(../images/icon-social.svg);
+             background-size: 100% 100%;
+             position: absolute;
+             top: -5px;
+             right: 10px;
+             z-index: 1;
+         
+        }
+    }
+    
+    .box_social_blockB{
+        width: 100%;
+        height: 85%;
+        padding: 20px;
+        background: $color-new2;   //azul
+        border-radius: 15px;
+        z-index: 2;
+        transition: 0.2s ease-in-out all;
+
+        .box_social_blockB_box{
+             width: 100%;
+             //background: hotpink;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             .box_social_blockB_box_text{
+                 color: white;
+                 font-weight: 400;
+                 font-size: 18px;
+             }
+             .box_work_blockB_box_points{
+                 
+             }
+        }
+        .box_social_blockB_hrs{
+           margin-top: 20px;  
+           color: white;
+           font-size: 60px;
+           font-weight: 300;
+        }
+        .box_social_blockB_last{
+           color: $color-new4;
+           font-size: 16px;
+           font-weight: 300;
+        }
+    }
+    .box_social_blockB:hover{
+        background:rgba(5, 34, 129, 0.753);
+        cursor: pointer;
+    }
+ }
+ @media (min-width:320px) and (max-width:640px){
+    .box_social{
+        width: 90%;
+        height: 230px;
+        margin: auto;
+        //padding: 5px 0px;
+        .box_social_blockA{
+
+        }
+        .box_social_blockB{
+            .box_social_blockB_box{
+                width: 100%;
+                //background: hotpink;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .box_social_blockB_box_text{
+                    color: white;
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+                .box_social_blockB_box_points{
+                    
+                }
+           }
+           .box_social_blockB_hrs{
+              margin-top: 20px;  
+              color: white;
+              font-size: 60px;
+              font-weight: 300;
+              width: 150px;
+              float: left;
+              .esp{
+                color: rgb(218, 8, 8);
+            }
+           }
+           .box_social_blockB_last{
+               margin-top: 50px;
+               float: right;
+               width: 150px;
+              color: $color-new4;
+              font-size: 16px;
+              font-weight: 300;
+           }
+        }
+    }
+}
+
+ ///////////////////////////BOX PLAY/////////////////
+.box_selfcare{
+    width: 100%;
+    height: 100%;
+    background:$color-sep;
+    border-radius: 15px;
+    .box_selfcare_blockA{
+        width: 100%;
+        height: 15%;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        .box_selfcare_blockA_image{
+            width: 70px;
+            height: 60px;
+            background-image: url(../images/icon-work.svg);
+            background-size: 100% 100%;
+            position: absolute;
+            top: -5px;
+            right: 10px;
+            z-index: 1;
+        }
+        .box_selfcare_blockA_image{
+             width: 70px;
+             height: 60px;
+             background-image: url(../images/icon-self-care.svg);
+             background-size: 100% 100%;
+             position: absolute;
+             top: -5px;
+             right: 10px;
+             z-index: 1;
+         
+        }
+    }
+    
+    .box_selfcare_blockB{
+        width: 100%;
+        height: 85%;
+        padding: 20px;
+        background: $color-new2;   //azul
+        border-radius: 15px;
+        z-index: 2;
+        transition: 0.2s ease-in-out all;
+
+        .box_selfcare_blockB_box{
+             width: 100%;
+             //background: hotpink;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             .box_selfcare_blockB_box_text{
+                 color: white;
+                 font-weight: 400;
+                 font-size: 18px;
+             }
+             .box_work_blockB_box_points{
+                 
+             }
+        }
+        .box_selfcare_blockB_hrs{
+           margin-top: 20px;  
+           color: white;
+           font-size: 60px;
+           font-weight: 300;
+        }
+        .box_selfcare_blockB_last{
+           color: $color-new4;
+           font-size: 16px;
+           font-weight: 300;
+        }
+    }
+    .box_selfcare_blockB:hover{
+        background:rgba(5, 34, 129, 0.753);
+        cursor: pointer;
+    }
+ }
+ @media (min-width:320px) and (max-width:640px){
+    .box_selfcare{
+        width: 90%;
+        height: 230px;
+        margin: auto;
+        //padding: 5px 0px;
+        .box_selfcare_blockA{
+
+        }
+        .box_selfcare_blockB{
+            .box_selfcare_blockB_box{
+                width: 100%;
+                //background: hotpink;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .box_selfcare_blockB_box_text{
+                    color: white;
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+                .box_selfcare_blockB_box_points{
+                    
+                }
+           }
+           .box_selfcare_blockB_hrs{
+              margin-top: 20px;  
+              color: white;
+              font-size: 60px;
+              font-weight: 300;
+              width: 150px;
+              float: left;
+              .esp{
+                color: rgb(218, 8, 8);
+            }
+           }
+           .box_selfcare_blockB_last{
+               margin-top: 50px;
+               float: right;
+               width: 150px;
+              color: $color-new4;
+              font-size: 16px;
+              font-weight: 300;
+           }
+        }
+    }
+}

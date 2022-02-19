@@ -1,0 +1,97 @@
+@import "colors";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;   ///300   400   500   font-size:18px;
+    
+}
+a{
+    text-decoration: none;
+    color: wheat;
+}
+
+.CONT__BASE{
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    background: $color-new1;
+    margin: auto;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    
+    .CONTAINER{
+        width: 1000px;
+        padding: 10px 0px;
+        //background: rgb(39, 39, 39);
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,auto);
+        grid-gap: 1em;
+        grid-template-areas:"BOX__SIDEBAR   BOX__WORK       BOX__PLAY     BOX__STUDY"
+                            "BOX__SIDEBAR   BOX__EXERCISE   BOX__SOCIAL   BOX__SELFCARE";
+                            .BOX__SIDEBAR{
+                                padding: 10px 0px;
+                                //background: rgba(172, 255, 47, 0.884);
+                                grid-area:BOX__SIDEBAR ;
+                            }
+                            .BOX__WORK{
+                                padding: 10px 0px;
+                                //background: rgba(172, 255, 47, 0.884);
+                                grid-area:BOX__WORK ;
+                            }
+                            .BOX__PLAY{
+                                padding: 10px 0px;
+                                //background: rgba(172, 255, 47, 0.884);
+                                grid-area:BOX__PLAY ;
+                            }
+                            .BOX__STUDY{
+                                padding: 10px 0px;
+                                //background: rgba(172, 255, 47, 0.884);
+                                grid-area:BOX__STUDY ;
+                            }
+                            .BOX__EXERCISE{
+                                padding: 10px 0px;
+                                //background: rgba(172, 255, 47, 0.884);
+                                grid-area: BOX__EXERCISE;
+                            }
+                            .BOX__SOCIAL{
+                                padding: 10px 0px;
+                                //background: rgba(172, 255, 47, 0.884);
+                                grid-area:BOX__SOCIAL;
+                            }
+                            .BOX__SELFCARE{
+                                padding: 10px 0px;
+                                //background: rgba(172, 255, 47, 0.884);
+                                grid-area: BOX__SELFCARE;
+                            }
+                            
+    }
+}
+
+
+@media (min-width:320px) and (max-width:640px){
+   .CONT__BASE{
+       height: auto;
+       .CONTAINER{
+        width: 1000px;
+        padding: 10px 0px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);   
+        grid-template-rows: repeat(7,auto);
+        grid-gap: 1em;
+        grid-template-areas:"BOX__SIDEBAR   BOX__SIDEBAR       BOX__SIDEBAR     BOX__SIDEBAR"
+                            "BOX__WORK      BOX__WORK          BOX__WORK        BOX__WORK"
+                            "BOX__PLAY      BOX__PLAY          BOX__PLAY        BOX__PLAY"
+                            "BOX__STUDY     BOX__STUDY         BOX__STUDY       BOX__STUDY"
+                            "BOX__EXERCISE  BOX__EXERCISE      BOX__EXERCISE    BOX__EXERCISE"
+                            "BOX__SOCIAL    BOX__SOCIAL        BOX__SOCIAL      BOX__SOCIAL"
+                            "BOX__SELFCARE  BOX__SELFCARE      BOX__SELFCARE    BOX__SELFCARE";
+       }
+   }
+}
